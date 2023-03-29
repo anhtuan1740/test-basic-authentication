@@ -33,4 +33,14 @@ class YoutubeVideoTest < ActiveSupport::TestCase
     youtube5.save!
     assert(!youtube5.new_record?)
   end
+
+  test "youtube link not valid" do
+    assert_raise(Exception) {VideoInfo.new('dasdasasfs')}
+
+  end
+
+  test "youtube link is valid" do
+    video = VideoInfo.new('https://www.youtube.com/watch?v=o_See1JmLGo')
+    assert_equal(video.title, "Argentina vs Curacao 7-0 | All Goals & Highlights")
+  end
 end

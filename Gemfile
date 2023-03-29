@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Additional GEM
 # Encryption of passwords is done using the bcyrpt_gem.
 gem 'bcrypt', '~> 3.1.7'
 gem 'video_info'
