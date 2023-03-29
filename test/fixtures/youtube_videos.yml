@@ -1,7 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  link: MyString
+  link: https://www.youtube.com/watch?v=o_See1JmLGo
+  user: <%= User.where('email = ?', "test@test.com").first %>
 
 two:
-  link: MyString
+  link: https://www.youtube.com/watch?v=aMXl4Y8FBvU
+  user: <%= User.where('email = ?', "test5@test.com").first %>
+
+three:
+  link: https://www.youtube.com/watch?v=-HbQBowPi7o
+  user: <%= User.where('email = ?', "test5@test.com").first %>
