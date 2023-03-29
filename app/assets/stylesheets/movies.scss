@@ -1,0 +1,27 @@
+// Place all the styles related to the Movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.video {
+  padding: 20px 150px;
+}
+
+.video .video-player {
+  display: inline-block;
+}
+
+.video .video-details {
+  padding-left: 20px;
+  width: 800px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.video .video-details .video-title,
+.video .video-details .video-shared-by {
+  padding-bottom: 10px;
+}
+
+.video .video-details .video-title {
+  color: red;
+}

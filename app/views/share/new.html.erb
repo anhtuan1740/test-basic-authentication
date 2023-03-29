@@ -1,0 +1,21 @@
+<div class="share-form">
+  <%= form_with url: share_video_path do |f| %>
+    <% field_set_tag 'Share a Youtube movie' do %>
+      <div class="youtube-link">
+        <%= f.label 'link:'%><br>
+        <%= f.text_field :link, id: 'link',value: flash[:alert_link].present? ? flash[:alert_link]['link'] : "" %>
+      </div>
+      <div class="submit-share">
+        <%= f.submit 'Share' %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<% if flash[:alert_link].present? %>
+  <div class="notice alert">
+      <%= flash[:alert_link]['alert'] %> ffff
+  </div>
+<% end %>
+
+
+

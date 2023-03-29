@@ -1,0 +1,37 @@
+// Place all the styles related to the share controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.share-form {
+  padding: 200px 50px
+}
+
+.share-form form {
+  margin: auto;
+  width: 30%;
+  height: 120px;
+}
+
+.share-form form fieldset {
+  height: 100%;
+}
+
+.share-form form .youtube-link {
+  display: inline-flex;
+  gap: 50px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.share-form form .youtube-link label {
+  width: 150px;
+}
+
+.share-form form .youtube-link input,
+.share-form form .submit-share input {
+  width: 100%;
+}
+
+.share-form form .submit-share {
+  padding-top: 20px;
+  padding-left: 185px;
+}

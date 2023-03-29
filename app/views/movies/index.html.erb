@@ -1,0 +1,13 @@
+<% @videos.each do |video| %>
+    <div class="video">
+      <div class="video-player">
+        <iframe src="<%= video[:embed_url] %>" frameborder="0"></iframe>
+      </div>
+      <div class="video-details">
+        <div class="video-title"><%= video[:title] %></div>
+        <div class="video-shared-by">Shared by: <%= video[:shared_by] %></div>
+        <div class="video-description">Description: <br><%= video[:description] %></div>
+      </div>
+    </div>
+<% end %>
+
